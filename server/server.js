@@ -1,5 +1,6 @@
-const io = require('socket.io')(5000, { cors: { origin: '*' } })
-
+const port = process.env.PORT || 80
+const io = require('socket.io')(port, { cors: { origin: '*' } })
+console.log(11111111100011111111)
 io.on('connection', (socket) => {
   const id = socket.handshake.query.id
   socket.join(id)

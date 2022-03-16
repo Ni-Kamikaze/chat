@@ -17,7 +17,6 @@ export default function Conversations() {
           {conversation.recipients.map((r) => r.name).join(', ')}
         </ListGroup.Item>
       ))}
-      <h1>test</h1>
     </ListGroup>
   )
 }
